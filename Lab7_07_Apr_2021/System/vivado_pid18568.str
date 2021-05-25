@@ -1,0 +1,971 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 18568
+License: Customer
+
+Current time: 	Thu Apr 15 14:36:07 PDT 2021
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 3840x2160
+Screen resolution (DPI): 225
+Available screens: 2
+Available disk space: 124 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=27
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Ahiezer
+User home directory: C:/Users/Ahiezer
+User working directory: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/Ahiezer/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/Ahiezer/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/Ahiezer/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/vivado.log
+Vivado journal file location: 	C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/vivado.jou
+Engine tmp dir: 	C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/.Xil/Vivado-18568-LAPTOP-E46NNAVE
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	189 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 707 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Ahiezer\Documents\GitHub\ECE4304_SPRING_2021_GROUP_E\Lab7_07_Apr_2021\System\System.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 146 MB (+151061kb) [00:00:09]
+// [Engine Memory]: 766 MB (+651233kb) [00:00:09]
+// [Engine Memory]: 814 MB (+10198kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  3097 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 814 MB. GUI used memory: 90 MB. Current time: 4/15/21, 2:36:11 PM PDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 841.941 ; gain = 170.781 
+// Project name: System; location: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 841 MB. GUI used memory: 93 MB. Current time: 4/15/21, 2:36:29 PM PDT
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Thu Apr 15 14:36:29 2021] Launched synth_1... Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/synth_1/runme.log [Thu Apr 15 14:36:29 2021] Launched impl_1... Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 192 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1123 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// [GUI Memory]: 155 MB (+1469kb) [00:03:46]
+// [Engine Memory]: 857 MB (+3109kb) [00:03:46]
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// Elapsed time: 170 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 06 2019-21:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 871.953 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  4723 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2358A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,078 MB. GUI used memory: 97 MB. Current time: 4/15/21, 2:42:50 PM PDT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,082 MB (+1239298kb) [00:06:51]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// Elapsed time: 13 seconds
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bB (cr)
+// [GUI Memory]: 172 MB (+9796kb) [00:11:01]
+// Elapsed time: 606 seconds
+selectCodeEditor("top.vhd", 1288, 227); // ch (w, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+// Elapsed time: 31 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cr)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1364 ms.
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), BRL_SHFT1 : barrel_shifter(Behavioral) (barrel_shifter.vhd)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), BRL_SHFT1 : barrel_shifter(Behavioral) (barrel_shifter.vhd)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), BRL_SHFT2 : barrel_shifter(Behavioral) (barrel_shifter.vhd)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), BRL_SHFT2 : barrel_shifter(Behavioral) (barrel_shifter.vhd)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), BCD_ALU : ALU(Behavioral) (ALU.vhd)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), BCD_ALU : ALU(Behavioral) (ALU.vhd), GEN_WRAPPER[2].SUBorADD : FA(Behavioral) (FA.vhd)]", 8, false, false, false, false, false, true); // B (F, cr) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), BCD_ALU : ALU(Behavioral) (ALU.vhd)]", 4); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), SS : Seven_Seg(Behavioral) (Seven_seg.vhd)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), SS : Seven_Seg(Behavioral) (Seven_seg.vhd)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), GEN_UART_RX : UART_RX(rtl) (UART_RX.vhd)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), GEN_UART_RX : UART_RX(rtl) (UART_RX.vhd)]", 6, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), GEN_UART_RX : UART_RX(rtl) (UART_RX.vhd), GEN_FIFO_A : STD_FIFO(Behavioral) (fifo.vhd)]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), GEN_UART_RX : UART_RX(rtl) (UART_RX.vhd), GEN_FIFO_A : STD_FIFO(Behavioral) (fifo.vhd)]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("fifo.vhd", 768, 497); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("fifo.vhd", 642, 466); // ch (w, cr)
+selectCodeEditor("fifo.vhd", 642, 466, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("fifo.vhd", 700, 474); // ch (w, cr)
+selectCodeEditor("fifo.vhd", 700, 474, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("fifo.vhd", 189, 540); // ch (w, cr)
+selectCodeEditor("fifo.vhd", 189, 540, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("fifo.vhd", 395, 684); // ch (w, cr)
+selectCodeEditor("fifo.vhd", 395, 684, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("fifo.vhd", 567, 698); // ch (w, cr)
+selectCodeEditor("fifo.vhd", 567, 695, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("fifo.vhd", 459, 750); // ch (w, cr)
+selectCodeEditor("fifo.vhd", 459, 750, false, false, false, false, true); // ch (w, cr) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  2723 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,098 MB. GUI used memory: 84 MB. Current time: 4/15/21, 3:12:55 PM PDT
+// Elapsed time: 1171 seconds
+selectCodeEditor("fifo.vhd", 1403, 827); // ch (w, cr)
+selectCodeEditor("fifo.vhd", 1397, 374); // ch (w, cr)
+typeControlKey((HResource) null, "fifo.vhd", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 188 MB (+7521kb) [00:38:29]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Apr 15 15:14:35 2021] Launched synth_1... Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/synth_1/runme.log [Thu Apr 15 15:14:35 2021] Launched impl_1... Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 438ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 375 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1933 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 06 2019-21:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2161.902 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2358A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 16 seconds
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// PAPropertyPanels.initPanels (xc7a100t_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 168 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+// Elapsed time: 451 seconds
+selectCodeEditor("top.vhd", 1173, 516); // ch (w, cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [GUI Memory]: 204 MB (+7112kb) [00:55:56]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 9 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("top.vhd", 1000, 597); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 4); // i (h, cr)
+selectCodeEditor("UART_RX.vhd", 204, 985); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 204, 985, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("UART_RX.vhd", 596, 1164); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 596, 1164, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("UART_RX.vhd", 1134, 766); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 136, 517); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 136, 517, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fifo.vhd", 5); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 4); // i (h, cr)
+selectCodeEditor("UART_RX.vhd", 293, 396); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 293, 396, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 69 seconds
+selectCodeEditor("UART_RX.vhd", 422, 952); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 422, 952, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("UART_RX.vhd", 630, 551); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 630, 556); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 630, 560, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("UART_RX.vhd", 630, 560); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 820, 555); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fifo.vhd", 5); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 4); // i (h, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("UART_RX.vhd", 409, 1035); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 409, 1035, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "UART_RX.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 550, 497); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 550, 497, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "UART_RX.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 835, 847); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("UART_RX.vhd", 551, 628); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 275, 730); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 275, 730, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "UART_RX.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 556, 132); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 556, 132, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "UART_RX.vhd", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 0); // i (h, cr)
+selectCodeEditor("top.vhd", 442, 955); // ch (w, cr)
+selectCodeEditor("top.vhd", 520, 958); // ch (w, cr)
+selectCodeEditor("top.vhd", 520, 958, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.vhd", 520, 974); // ch (w, cr)
+selectCodeEditor("top.vhd", 520, 974, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.vhd", 524, 1011); // ch (w, cr)
+selectCodeEditor("top.vhd", 524, 1011, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.vhd", 541, 1047); // ch (w, cr)
+selectCodeEditor("top.vhd", 541, 1047, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.vhd", 541, 1071); // ch (w, cr)
+selectCodeEditor("top.vhd", 541, 1071, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.vhd", 542, 1087); // ch (w, cr)
+selectCodeEditor("top.vhd", 542, 1087, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.vhd", 546, 1155); // ch (w, cr)
+selectCodeEditor("top.vhd", 546, 1155, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.vhd", 558, 1211); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Apr 15 15:35:07 2021] Launched synth_1... Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/synth_1/runme.log [Thu Apr 15 15:35:07 2021] Launched impl_1... Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 437 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,098 MB. GUI used memory: 137 MB. Current time: 4/15/21, 3:42:55 PM PDT
+// Elapsed time: 73 seconds
+selectCodeEditor("top.vhd", 807, 1157); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cr)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: top 
+// WARNING: HEventQueue.dispatchEvent() is taking  2721 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,734 MB. GUI used memory: 136 MB. Current time: 4/15/21, 3:44:12 PM PDT
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,734 MB. GUI used memory: 136 MB. Current time: 4/15/21, 3:44:27 PM PDT
+// [Engine Memory]: 2,734 MB (+574419kb) [01:08:29]
+// Xgd.load filename: C:/Xilinx/Vivado/2019.2/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1s
+// TclEventType: DESIGN_NEW
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2971 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2681.570 ; gain = 240.949 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:66] 
+// Tcl Message: 	Parameter WIDTH bound to: 8 - type: integer  	Parameter top_g_WIDTH bound to: 8 - type: integer  	Parameter top_g_DEPTH bound to: 4 - type: integer  	Parameter top_g_CLKS_PER_BIT bound to: 869 - type: integer  	Parameter width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'barrel_shifter' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:28' bound to instance 'BRL_SHFT1' of component 'barrel_shifter' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:105] INFO: [Synth 8-638] synthesizing module 'barrel_shifter' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:42] 
+// Tcl Message: 	Parameter width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'barrel_shifter' (1#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:42] 
+// Tcl Message: 	Parameter width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'barrel_shifter' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:28' bound to instance 'BRL_SHFT2' of component 'barrel_shifter' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:105] 
+// Tcl Message: 	Parameter width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:16' bound to instance 'BCD_ALU' of component 'ALU' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:194] INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:28] 
+// Tcl Message: 	Parameter width bound to: 8 - type: integer  
+// Tcl Message: 	Parameter mul_width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'MUL' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/MUL.vhd:6' bound to instance 'MULITPLY' of component 'MUL' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:92] INFO: [Synth 8-638] synthesizing module 'MUL' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/MUL.vhd:18] 
+// Tcl Message: 	Parameter mul_width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'MUL' (3#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/MUL.vhd:18] INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:113] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'Seven_Seg' (5#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/Seven_seg.vhd:34] 
+// Tcl Message: 	Parameter g_CLKS_PER_BIT bound to: 869 - type: integer  	Parameter width bound to: 8 - type: integer  	Parameter depth bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'UART_RX' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:31' bound to instance 'GEN_UART_RX' of component 'UART_RX' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:257] INFO: [Synth 8-638] synthesizing module 'UART_RX' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:53] 
+// Tcl Message: 	Parameter g_CLKS_PER_BIT bound to: 869 - type: integer  	Parameter width bound to: 8 - type: integer  	Parameter depth bound to: 4 - type: integer  	Parameter DATA_WIDTH bound to: 8 - type: integer  	Parameter FIFO_DEPTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'STD_FIFO' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:5' bound to instance 'GEN_FIFO_A' of component 'STD_FIFO' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:96] INFO: [Synth 8-638] synthesizing module 'STD_FIFO' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:22] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 8 - type: integer  	Parameter FIFO_DEPTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'STD_FIFO' (6#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:22] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 8 - type: integer  	Parameter FIFO_DEPTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'STD_FIFO' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:5' bound to instance 'GEN_FIFO_B' of component 'STD_FIFO' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:120] INFO: [Synth 8-256] done synthesizing module 'UART_RX' (7#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:53] INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:66] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2726.691 ; gain = 286.070 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2745.527 ; gain = 304.906 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2745.527 ; gain = 304.906 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2745.527 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc] Finished Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2859.426 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 2872.602 ; gain = 431.980 
+// Tcl Message: 39 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:35 . Memory (MB): peak = 2872.602 ; gain = 696.391 
+// 'dQ' command handler elapsed time: 37 seconds
+// [GUI Memory]: 227 MB (+13101kb) [01:08:34]
+// Elapsed time: 36 seconds
+dismissDialog("Open Elaborated Design"); // bB (cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H (aI, cr)
+// PAPropertyPanels.initPanels (GEN_UART_RX (UART_RX)) elapsed time: 0.3s
+// Elapsed time: 29 seconds
+selectButton(PAResourceQtoS.SchematicView_PREVIOUS, "Schematic_previousview"); // E (f, cr)
+// PAPropertyPanels.initPanels (r_RX_DV) elapsed time: 0.2s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,755 MB. GUI used memory: 171 MB. Current time: 4/15/21, 3:45:50 PM PDT
+// Elapsed time: 151 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // i (h, cr)
+selectCodeEditor("top.vhd", 657, 1188); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 6); // i (h, cr)
+selectCodeEditor("UART_RX.vhd", 1262, 673); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // E (f, cr)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (f, cr)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // E (f, cr)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // E (f, cr)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (f, cr)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (f, cr)
+selectCodeEditor("UART_RX.vhd", 566, 400); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (ds, cr)
+// bB (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2953.492 ; gain = 13.207 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,857 MB. GUI used memory: 172 MB. Current time: 4/15/21, 3:48:15 PM PDT
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:66] 
+// Tcl Message: 	Parameter WIDTH bound to: 8 - type: integer  	Parameter top_g_WIDTH bound to: 8 - type: integer  	Parameter top_g_DEPTH bound to: 4 - type: integer  	Parameter top_g_CLKS_PER_BIT bound to: 869 - type: integer  	Parameter width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'barrel_shifter' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:28' bound to instance 'BRL_SHFT1' of component 'barrel_shifter' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:105] INFO: [Synth 8-638] synthesizing module 'barrel_shifter' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:42] 
+// Tcl Message: 	Parameter width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'barrel_shifter' (1#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:42] 
+// Tcl Message: 	Parameter width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'barrel_shifter' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:28' bound to instance 'BRL_SHFT2' of component 'barrel_shifter' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:105] 
+// Tcl Message: 	Parameter width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:16' bound to instance 'BCD_ALU' of component 'ALU' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:194] INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:28] 
+// Tcl Message: 	Parameter width bound to: 8 - type: integer  
+// Tcl Message: 	Parameter mul_width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'MUL' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/MUL.vhd:6' bound to instance 'MULITPLY' of component 'MUL' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:92] INFO: [Synth 8-638] synthesizing module 'MUL' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/MUL.vhd:18] 
+// Tcl Message: 	Parameter mul_width bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'MUL' (3#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/MUL.vhd:18] INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:113] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'Seven_Seg' (5#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/Seven_seg.vhd:34] 
+// Tcl Message: 	Parameter g_CLKS_PER_BIT bound to: 869 - type: integer  	Parameter width bound to: 8 - type: integer  	Parameter depth bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'UART_RX' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:31' bound to instance 'GEN_UART_RX' of component 'UART_RX' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:257] INFO: [Synth 8-638] synthesizing module 'UART_RX' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:53] 
+// Tcl Message: 	Parameter g_CLKS_PER_BIT bound to: 869 - type: integer  	Parameter width bound to: 8 - type: integer  	Parameter depth bound to: 4 - type: integer  	Parameter DATA_WIDTH bound to: 8 - type: integer  	Parameter FIFO_DEPTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'STD_FIFO' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:5' bound to instance 'GEN_FIFO_A' of component 'STD_FIFO' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:96] INFO: [Synth 8-638] synthesizing module 'STD_FIFO' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:22] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 8 - type: integer  	Parameter FIFO_DEPTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'STD_FIFO' (6#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:22] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 8 - type: integer  	Parameter FIFO_DEPTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'STD_FIFO' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:5' bound to instance 'GEN_FIFO_B' of component 'STD_FIFO' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:120] INFO: [Synth 8-256] done synthesizing module 'UART_RX' (7#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:53] INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:66] 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// [Engine Memory]: 2,881 MB (+11171kb) [01:12:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,883 MB. GUI used memory: 148 MB. Current time: 4/15/21, 3:48:21 PM PDT
+// Engine heap size: 2,883 MB. GUI used memory: 149 MB. Current time: 4/15/21, 3:48:21 PM PDT
+// WARNING: HEventQueue.dispatchEvent() is taking  4582 ms.
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2997.051 ; gain = 56.766 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 3023.297 ; gain = 83.012 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 3023.297 ; gain = 83.012 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,883 MB. GUI used memory: 147 MB. Current time: 4/15/21, 3:48:25 PM PDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5492 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3026.801 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc] Finished Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:25 . Memory (MB): peak = 3395.527 ; gain = 455.242 
+// [Engine Memory]: 3,074 MB (+50736kb) [01:12:32]
+// Elapsed time: 26 seconds
+dismissDialog("Reloading"); // bB (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // i (h, cr)
+selectCodeEditor("top.vhd", 657, 1057); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u (O, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Apr 15 15:48:56 2021] Launched synth_1... Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/synth_1/runme.log [Thu Apr 15 15:48:56 2021] Launched impl_1... Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 337 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 114 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fifo.vhd", 5); // i (h, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("fifo.vhd", 565, 1317); // ch (w, cr)
+selectCodeEditor("fifo.vhd", 633, 1313); // ch (w, cr)
+selectCodeEditor("fifo.vhd", 428, 914); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 4); // i (h, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("UART_RX.vhd", 107, 1437); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 107, 1437, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "UART_RX.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 588, 471); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 588, 471, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "UART_RX.vhd", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "UART_RX.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 73, 1422); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 73, 1421, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "UART_RX.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 579, 357); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 579, 357, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "UART_RX.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 257 seconds
+selectCodeEditor("UART_RX.vhd", 294, 1439); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 294, 1439, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 26 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectCodeEditor("UART_RX.vhd", 523, 993); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 523, 993, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("UART_RX.vhd", 541, 894, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("UART_RX.vhd", 521, 874); // ch (w, cr)
+selectCodeEditor("UART_RX.vhd", 521, 874, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("UART_RX.vhd", 898, 741); // ch (w, cr)
+// [GUI Memory]: 244 MB (+5403kb) [01:28:37]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,080 MB. GUI used memory: 179 MB. Current time: 4/15/21, 4:18:26 PM PDT

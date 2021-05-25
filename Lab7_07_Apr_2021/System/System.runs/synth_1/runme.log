@@ -1,0 +1,509 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17344 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 852.184 ; gain = 234.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:66]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter top_g_WIDTH bound to: 8 - type: integer 
+	Parameter top_g_DEPTH bound to: 4 - type: integer 
+	Parameter top_g_CLKS_PER_BIT bound to: 869 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'barrel_shifter' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:28' bound to instance 'BRL_SHFT1' of component 'barrel_shifter' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'barrel_shifter' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:42]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'barrel_shifter' (1#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:42]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'barrel_shifter' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/barrel_shifter.vhd:28' bound to instance 'BRL_SHFT2' of component 'barrel_shifter' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:105]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:16' bound to instance 'BCD_ALU' of component 'ALU' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:28]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/FA.vhd:14' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/FA.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'FA' (2#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/FA.vhd:26]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/FA.vhd:14' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:76]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/FA.vhd:14' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:76]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/FA.vhd:14' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:76]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/FA.vhd:14' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:76]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/FA.vhd:14' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:76]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/FA.vhd:14' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:76]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/FA.vhd:14' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:76]
+	Parameter mul_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'MUL' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/MUL.vhd:6' bound to instance 'MULITPLY' of component 'MUL' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'MUL' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/MUL.vhd:18]
+	Parameter mul_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUL' (3#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/MUL.vhd:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:113]
+WARNING: [Synth 8-614] signal 'sum_out' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:111]
+WARNING: [Synth 8-614] signal 'mul_output' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:111]
+WARNING: [Synth 8-614] signal 'div_out' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:111]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_2_reg' and it is trimmed from '16' to '8' bits. [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:70]
+WARNING: [Synth 8-3848] Net div_out in module/entity ALU does not have driver. [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:28]
+INFO: [Synth 8-3491] module 'Seven_Seg' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/Seven_seg.vhd:16' bound to instance 'SS' of component 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/Seven_seg.vhd:34]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/Seven_seg.vhd:60]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/Seven_seg.vhd:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dout_out_reg' and it is trimmed from '6' to '5' bits. [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/Seven_seg.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'Seven_Seg' (5#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/Seven_seg.vhd:34]
+	Parameter g_CLKS_PER_BIT bound to: 869 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+	Parameter depth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'UART_RX' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:33' bound to instance 'GEN_UART_RX' of component 'UART_RX' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'UART_RX' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:55]
+	Parameter g_CLKS_PER_BIT bound to: 869 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+	Parameter depth bound to: 4 - type: integer 
+	Parameter g_WIDTH bound to: 8 - type: integer 
+	Parameter g_DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'module_fifo_regs_no_flags' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:5' bound to instance 'GEN_FIFO_A' of component 'module_fifo_regs_no_flags' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'module_fifo_regs_no_flags' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:26]
+	Parameter g_WIDTH bound to: 8 - type: integer 
+	Parameter g_DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'module_fifo_regs_no_flags' (6#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:26]
+WARNING: [Synth 8-614] signal 'o_RX_DV' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:154]
+	Parameter g_WIDTH bound to: 8 - type: integer 
+	Parameter g_DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'module_fifo_regs_no_flags' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:5' bound to instance 'GEN_FIFO_B' of component 'module_fifo_regs_no_flags' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:164]
+WARNING: [Synth 8-6014] Unused sequential element clk_bounce_reg was removed.  [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:112]
+WARNING: [Synth 8-6014] Unused sequential element count_time_reg was removed.  [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'UART_RX' (7#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/top.vhd:66]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 925.668 ; gain = 308.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 925.668 ; gain = 308.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 925.668 ; gain = 308.137
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 925.668 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc]
+Finished Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1026.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1026.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1026.934 ; gain = 409.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1026.934 ; gain = 409.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1026.934 ; gain = 409.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ps_state_reg' in module 'barrel_shifter'
+INFO: [Synth 8-802] inferred FSM for state register 'ps_state_reg' in module 'MUL'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/fifo.vhd:52]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              000 |                              000
+                      s3 |                              001 |                              011
+                      s4 |                              010 |                              100
+                      s1 |                              011 |                              001
+                      s2 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ps_state_reg' using encoding 'sequential' in module 'barrel_shifter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              001 |                              000
+                      s1 |                              010 |                              001
+                      s2 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ps_state_reg' using encoding 'one-hot' in module 'MUL'
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_go_reg' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/ALU.vhd:88]
+WARNING: [Synth 8-327] inferring latch for variable 'o_RX_DVA_reg' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:145]
+WARNING: [Synth 8-327] inferring latch for variable 'o_RX_DVB_reg' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.srcs/sources_1/new/UART_RX.vhd:157]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1026.934 ; gain = 409.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 4     
++---XORs : 
+	   3 Input      1 Bit         XORs := 8     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               32 Bit         RAMs := 2     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 12    
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module barrel_shifter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 4     
+Module FA 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module MUL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+Module ALU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module Seven_Seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module module_fifo_regs_no_flags 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	               32 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module UART_RX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design top has unconnected port top_ALU_rst
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1026.934 ; gain = 409.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+----------------------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                             | Inference | Size (Depth x Width) | Primitives  | 
++------------+----------------------------------------+-----------+----------------------+-------------+
+|top         | GEN_UART_RX/GEN_FIFO_A/r_FIFO_DATA_reg | Implied   | 4 x 8                | RAM32M x 2	 | 
+|top         | GEN_UART_RX/GEN_FIFO_B/r_FIFO_DATA_reg | Implied   | 4 x 8                | RAM32M x 2	 | 
++------------+----------------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1026.934 ; gain = 409.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1026.934 ; gain = 409.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+----------------------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                             | Inference | Size (Depth x Width) | Primitives  | 
++------------+----------------------------------------+-----------+----------------------+-------------+
+|top         | GEN_UART_RX/GEN_FIFO_A/r_FIFO_DATA_reg | Implied   | 4 x 8                | RAM32M x 2	 | 
+|top         | GEN_UART_RX/GEN_FIFO_B/r_FIFO_DATA_reg | Implied   | 4 x 8                | RAM32M x 2	 | 
++------------+----------------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1028.055 ; gain = 410.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1033.836 ; gain = 416.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1033.836 ; gain = 416.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1033.836 ; gain = 416.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1033.836 ; gain = 416.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1033.836 ; gain = 416.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1033.836 ; gain = 416.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    20|
+|3     |LUT1   |    19|
+|4     |LUT2   |    20|
+|5     |LUT3   |    35|
+|6     |LUT4   |    35|
+|7     |LUT5   |    42|
+|8     |LUT6   |    47|
+|9     |MUXF7  |     2|
+|10    |RAM32M |     2|
+|11    |FDCE   |     6|
+|12    |FDRE   |   182|
+|13    |LD     |     2|
+|14    |IBUF   |    17|
+|15    |OBUF   |    20|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+----------------------------+------+
+|      |Instance       |Module                      |Cells |
++------+---------------+----------------------------+------+
+|1     |top            |                            |   451|
+|2     |  BCD_ALU      |ALU                         |   116|
+|3     |    MULITPLY   |MUL                         |   116|
+|4     |  BRL_SHFT1    |barrel_shifter              |    44|
+|5     |  BRL_SHFT2    |barrel_shifter_0            |    64|
+|6     |  GEN_UART_RX  |UART_RX                     |   110|
+|7     |    GEN_FIFO_A |module_fifo_regs_no_flags   |    23|
+|8     |    GEN_FIFO_B |module_fifo_regs_no_flags_1 |    23|
+|9     |  SS           |Seven_Seg                   |    44|
++------+---------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1033.836 ; gain = 416.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 1033.836 ; gain = 315.039
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1033.836 ; gain = 416.305
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1044.582 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1048.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1048.242 ; gain = 742.840
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1048.242 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 25 15:05:48 2021...

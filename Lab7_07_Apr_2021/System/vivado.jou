@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Apr 25 14:15:54 2021
+# Process ID: 24332
+# Current directory: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22220 C:\Users\Ahiezer\Documents\GitHub\ECE4304_SPRING_2021_GROUP_E\Lab7_07_Apr_2021\System\System.xpr
+# Log file: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/vivado.log
+# Journal file: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse C:/Users/Ahiezer/Downloads/Nexys_A7-100T1.xdc
+export_ip_user_files -of_objects  [get_files C:/Users/Ahiezer/Downloads/Nexys_A7-100T1.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/Ahiezer/Downloads/Nexys_A7-100T1.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab7_07_Apr_2021/System/System.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

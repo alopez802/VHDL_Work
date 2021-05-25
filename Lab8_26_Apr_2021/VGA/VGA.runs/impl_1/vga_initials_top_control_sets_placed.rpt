@@ -1,0 +1,88 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Apr 25 23:51:37 2021
+| Host         : LAPTOP-E46NNAVE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file vga_initials_top_control_sets_placed.rpt
+| Design       : vga_initials_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    10 |
+|    Minimum number of control sets                        |    10 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    37 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    10 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |            8 |
+| No           | No                    | Yes                    |              51 |           19 |
+| No           | Yes                   | No                     |               4 |            2 |
+| Yes          | No                    | No                     |               8 |            3 |
+| Yes          | No                    | Yes                    |              22 |            8 |
+| Yes          | Yes                   | No                     |               4 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+---------------------------------+------------------+------------------+----------------+
+|                Clock Signal                |          Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------------------------+---------------------------------+------------------+------------------+----------------+
+|  GEN_UART/GEN_FIFO_A/r_FIFO_COUNT_reg[0]_0 |                                 |                  |                1 |              1 |
+|  GEN_UART/clk_bounce                       |                                 | fifo_rst_IBUF    |                2 |              3 |
+|  n_0_58_BUFG                               | GEN_UART/GEN_FIFO_A/sel         | fifo_rst_IBUF    |                1 |              4 |
+|  n_0_58_BUFG                               | GEN_UART/r_Clk_Count[7]_i_1_n_1 |                  |                3 |              8 |
+|  n_0_58_BUFG                               | VGA_DRIVER/vsenable             | rst_IBUF         |                4 |             10 |
+|  n_0_58_BUFG                               | INIT/red0                       | rst_IBUF         |                4 |             12 |
+|  n_0_58_BUFG                               |                                 | rst_IBUF         |                8 |             15 |
+|  n_0_58_BUFG                               | GEN_UART/GEN_FIFO_A/p_0_in      |                  |                2 |             16 |
+|  n_0_58_BUFG                               |                                 |                  |                7 |             17 |
+|  n_0_58_BUFG                               |                                 | fifo_rst_IBUF    |               11 |             37 |
++--------------------------------------------+---------------------------------+------------------+------------------+----------------+
+
+

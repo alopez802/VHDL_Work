@@ -1,0 +1,16 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto cba13f7b34504943a62f0f977282f0b1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot decoder5x32_tb_behav xil_defaultlib.decoder5x32_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.decoder2x4 [decoder2x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.decoder5x32 [decoder5x32_default]
+Compiling architecture behavioral of entity xil_defaultlib.decoder5x32_tb
+Built simulation snapshot decoder5x32_tb_behav

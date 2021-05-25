@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar  2 18:46:33 2021
+# Process ID: 3756
+# Current directory: C:/Users/china/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab4_03_Mar_2021/Lab4_03_Mar_2021
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19508 C:\Users\china\Documents\GitHub\ECE4304_SPRING_2021_GROUP_E\Lab4_03_Mar_2021\Lab4_03_Mar_2021\Lab4_03_Mar_2021.xpr
+# Log file: C:/Users/china/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab4_03_Mar_2021/Lab4_03_Mar_2021/vivado.log
+# Journal file: C:/Users/china/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab4_03_Mar_2021/Lab4_03_Mar_2021\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/china/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab4_03_Mar_2021/Lab4_03_Mar_2021/Lab4_03_Mar_2021.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source bcd_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

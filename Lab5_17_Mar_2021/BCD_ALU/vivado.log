@@ -1,0 +1,172 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Mar 16 18:46:23 2021
+# Process ID: 28120
+# Current directory: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24512 C:\Users\Ahiezer\Documents\GitHub\ECE4304_SPRING_2021_GROUP_E\Lab5_17_Mar_2021\BCD_ALU\BCD_ALU.xpr
+# Log file: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/vivado.log
+# Journal file: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU'
+INFO: [Project 1-313] Project file moved from 'D:/Users/Sander/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 833.527 ; gain = 145.328
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 16 19:14:32 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.runs/synth_1/runme.log
+[Tue Mar 16 19:14:32 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 16 19:18:00 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.runs/synth_1/runme.log
+[Tue Mar 16 19:18:00 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: top
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1476.852 ; gain = 227.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/top.vhd:51]
+INFO: [Synth 8-3491] module 'Seven_Seg' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:36' bound to instance 'SS' of component 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/top.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:75]
+WARNING: [Synth 8-614] signal 'SSD_in_2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:73]
+WARNING: [Synth 8-614] signal 'SSD_in_3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:73]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'Seven_Seg' (1#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:49]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:36' bound to instance 'BCD_ALU' of component 'ALU' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/top.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:34' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'FA' (2#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:47]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:34' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:108]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:34' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:108]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:34' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:108]
+INFO: [Synth 8-3491] module 'MUL' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/MUL.vhd:35' bound to instance 'MULITPLY' of component 'MUL' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'MUL' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/MUL.vhd:46]
+WARNING: [Synth 8-6014] Unused sequential element M_temp_reg was removed.  [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/MUL.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'MUL' (3#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/MUL.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'top' (5#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/top.vhd:51]
+WARNING: [Synth 8-3331] design MUL has unconnected port mul_rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1528.113 ; gain = 278.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1528.113 ; gain = 278.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1528.113 ; gain = 278.867
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1528.113 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc]
+Finished Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1638.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1693.117 ; gain = 443.871
+23 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1693.117 ; gain = 710.941
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 16 19:43:24 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.runs/synth_1/runme.log
+[Tue Mar 16 19:43:25 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1761.457 ; gain = 41.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/top.vhd:51]
+INFO: [Synth 8-3491] module 'Seven_Seg' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:36' bound to instance 'SS' of component 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/top.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:75]
+WARNING: [Synth 8-614] signal 'SSD_in_2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:73]
+WARNING: [Synth 8-614] signal 'SSD_in_3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:73]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'Seven_Seg' (1#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/Seven_Seg.vhd:49]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:36' bound to instance 'BCD_ALU' of component 'ALU' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/top.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:34' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'FA' (2#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:47]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:34' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:108]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:34' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:108]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/FA.vhd:34' bound to instance 'SUBorADD' of component 'FA' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:108]
+INFO: [Synth 8-3491] module 'MUL' declared at 'C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/MUL.vhd:35' bound to instance 'MULITPLY' of component 'MUL' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'MUL' [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/MUL.vhd:47]
+	Parameter mul_width bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element M_temp_reg was removed.  [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/MUL.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'MUL' (3#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/MUL.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/ALU.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'top' (5#1) [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab5_17_Mar_2021/BCD_ALU/BCD_ALU.srcs/sources_1/new/top.vhd:51]
+WARNING: [Synth 8-3331] design MUL has unconnected port mul_rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1804.316 ; gain = 84.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1804.316 ; gain = 84.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1804.316 ; gain = 84.219
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1804.316 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc]
+Finished Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1938.117 ; gain = 218.020
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 16 20:22:29 2021...

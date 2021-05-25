@@ -1,0 +1,100 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Apr 25 15:06:42 2021
+| Host         : LAPTOP-E46NNAVE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    22 |
+|    Minimum number of control sets                        |    22 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    50 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    22 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |    10 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              26 |           11 |
+| No           | No                    | Yes                    |               6 |            2 |
+| No           | Yes                   | No                     |              52 |           13 |
+| Yes          | No                    | No                     |              64 |           19 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              42 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------+-----------------------------------------------------------+-------------------------------------+------------------+----------------+
+|                  Clock Signal                 |                       Enable Signal                       |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-----------------------------------------------+-----------------------------------------------------------+-------------------------------------+------------------+----------------+
+|  GEN_UART_RX/GEN_FIFO_A/r_FIFO_COUNT_reg[0]_0 |                                                           |                                     |                1 |              1 |
+|  GEN_UART_RX/GEN_FIFO_A/r_FIFO_COUNT_reg[3]_0 |                                                           |                                     |                1 |              1 |
+|  top_clk_IBUF_BUFG                            | GEN_UART_RX/GEN_FIFO_A/sel                                | top_fifo_rst_IBUF                   |                2 |              4 |
+|  top_clk_IBUF_BUFG                            | GEN_UART_RX/GEN_FIFO_B/r_FIFO_COUNT[3]_i_1__0_n_0         | top_fifo_rst_IBUF                   |                2 |              4 |
+|  bs_clk_BUFG                                  |                                                           |                                     |                2 |              6 |
+|  bs_clk_BUFG                                  |                                                           | top_lod_IBUF                        |                2 |              6 |
+|  bs_clk_BUFG                                  | BRL_SHFT1/bs_output[7]_i_1_n_0                            |                                     |                2 |              8 |
+|  bs_clk_BUFG                                  | BRL_SHFT1/I_temp[7]_i_1_n_0                               |                                     |                2 |              8 |
+|  bs_clk_BUFG                                  | BRL_SHFT2/bs_output[7]_i_1__0_n_0                         |                                     |                3 |              8 |
+|  bs_clk_BUFG                                  | BRL_SHFT2/I_temp[7]_i_1__0_n_0                            |                                     |                2 |              8 |
+|  top_clk_IBUF_BUFG                            |                                                           | top_fifo_rst_IBUF                   |                1 |              8 |
+|  top_clk_IBUF_BUFG                            | BCD_ALU/MULITPLY/P_temp0                                  |                                     |                3 |              8 |
+|  top_clk_IBUF_BUFG                            | BCD_ALU/MULITPLY/ps_state__0[1]                           |                                     |                2 |              8 |
+|  top_clk_IBUF_BUFG                            | BCD_ALU/MULITPLY/ps_state__0[1]                           | BCD_ALU/MULITPLY/Q_temp[15]_i_1_n_0 |                3 |              8 |
+|  top_clk_IBUF_BUFG                            | GEN_UART_RX/GEN_FIFO_A/r_FIFO_DATA_reg_0_3_0_5_i_1__0_n_0 |                                     |                1 |              8 |
+|  top_clk_IBUF_BUFG                            | GEN_UART_RX/GEN_FIFO_B/r_FIFO_DATA_reg_0_3_0_5_i_1_n_0    |                                     |                1 |              8 |
+|  top_clk_IBUF_BUFG                            | GEN_UART_RX/r_Clk_Count[9]_i_2_n_0                        | GEN_UART_RX/r_Clk_Count[9]_i_1_n_0  |                4 |             10 |
+|  top_clk_IBUF_BUFG                            | BCD_ALU/MULITPLY/FSM_onehot_ps_state_reg_n_0_[2]          |                                     |                5 |             16 |
+|  top_clk_IBUF_BUFG                            | BCD_ALU/MULITPLY/P_temp[0]_i_1_n_0                        | BCD_ALU/MULITPLY/P_temp0            |                4 |             16 |
+|  top_clk_IBUF_BUFG                            |                                                           |                                     |                7 |             18 |
+|  top_clk_IBUF_BUFG                            |                                                           | top_SS_rst_IBUF                     |                5 |             19 |
+|  top_clk_IBUF_BUFG                            |                                                           | top_rst_IBUF                        |                7 |             25 |
++-----------------------------------------------+-----------------------------------------------------------+-------------------------------------+------------------+----------------+
+
+

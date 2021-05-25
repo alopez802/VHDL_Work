@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Feb 28 19:16:56 2021
+# Process ID: 22224
+# Current directory: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab4_03_Mar_2021/Lab4_03_Mar_2021/Lab4_03_Mar_2021.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab4_03_Mar_2021/Lab4_03_Mar_2021/Lab4_03_Mar_2021.sim/sim_1/behav/xsim/xsim.dir/bcd_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab4_03_Mar_2021/Lab4_03_Mar_2021/Lab4_03_Mar_2021.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab4_03_Mar_2021/Lab4_03_Mar_2021/Lab4_03_Mar_2021.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab4_03_Mar_2021/Lab4_03_Mar_2021/Lab4_03_Mar_2021.sim/sim_1/behav/xsim/xsim.dir/bcd_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 28 19:16:56 2021...
