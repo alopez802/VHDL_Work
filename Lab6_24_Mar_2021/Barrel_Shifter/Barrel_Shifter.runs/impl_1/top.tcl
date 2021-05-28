@@ -60,22 +60,19 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  create_project -in_memory -part xc7a100tcsg324-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.xpr [current_project]
-  set_property ip_output_repo C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.cache/ip [current_project]
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.runs/impl_1/top.dcp
+  set_property webtalk.parent_dir C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.xpr [current_project]
+  set_property ip_output_repo C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.runs/synth_1/top.dcp
-  read_xdc {{C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.srcs/constrs_1/imports/ECE4304_SPRING_2021_GROUP_E/Nexys A7-100T.xdc}}
-  link_design -top top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

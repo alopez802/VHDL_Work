@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.runs/synth_1'
+HD_PWD='C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

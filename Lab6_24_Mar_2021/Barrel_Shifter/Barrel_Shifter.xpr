@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/Ahiezer/Documents/GitHub/ECE4304_SPRING_2021_GROUP_E/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Lab6_24_Mar_2021/Barrel_Shifter/Barrel_Shifter.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="61204bc8b9294ab3a85cecbc1f5b018b"/>
@@ -58,6 +58,14 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/new/Seven_Seg.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../ECE 4304/Barrel_Shifter/Barrel_Shifter.srcs/sources_1/new/Seven_Seg.vhd"/>
+          <Attr Name="ImportTime" Val="1616269275"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/barrel_shifter.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../ECE 4304/Barrel_Shifter/Barrel_Shifter.srcs/sources_1/new/barrel_shifter.vhd"/>
@@ -66,18 +74,8 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/Seven_Seg.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../ECE 4304/Barrel_Shifter/Barrel_Shifter.srcs/sources_1/new/Seven_Seg.vhd"/>
-          <Attr Name="ImportTime" Val="1616269275"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/top.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../ECE 4304/Barrel_Shifter/Barrel_Shifter.srcs/sources_1/new/top.vhd"/>
           <Attr Name="ImportTime" Val="1616269714"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -86,7 +84,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="barrel_shifter"/>
+        <Option Name="TopModule" Val="top"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
