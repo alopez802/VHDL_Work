@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May 27 10:26:16 2021
+# Process ID: 10324
+# Current directory: C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Class_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16864 C:\Users\Ahiezer\Documents\GitHub\VHDL_Work\Class_Project\Class_Project.xpr
+# Log file: C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Class_Project/vivado.log
+# Journal file: C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Class_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Class_Project/Class_Project.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:15 . Memory (MB): peak = 814.246 ; gain = 165.324
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Ahiezer\Documents\GitHub\VHDL_Work\Class_Project\Class_Project.srcs\sources_1\new\vga_initials.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Ahiezer\Documents\GitHub\VHDL_Work\Class_Project\Class_Project.srcs\sources_1\new\temp_vgatop.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Ahiezer\Documents\GitHub\VHDL_Work\Class_Project\Class_Project.srcs\sources_1\new\PROM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Ahiezer\Documents\GitHub\VHDL_Work\Class_Project\Class_Project.srcs\sources_1\new\vga_intials_top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Ahiezer\Documents\GitHub\VHDL_Work\Class_Project\Class_Project.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Ahiezer\Documents\GitHub\VHDL_Work\Class_Project\Class_Project.srcs\sources_1\new\vga_vhdl.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 27 11:27:06 2021...

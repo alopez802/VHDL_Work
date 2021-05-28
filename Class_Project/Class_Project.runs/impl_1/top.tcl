@@ -66,19 +66,13 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  set_param xicom.use_bs_reader 1
-  create_project -in_memory -part xc7a100tcsg324-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.xpr [current_project]
-  set_property ip_output_repo C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.cache/ip [current_project]
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Class_Project/Class_Project.runs/impl_1/top.dcp
+  set_property webtalk.parent_dir C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Class_Project/Class_Project.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Class_Project/Class_Project.xpr [current_project]
+  set_property ip_output_repo C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Class_Project/Class_Project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/top.dcp
-  read_ip -quiet C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
-  read_xdc C:/Users/Ahiezer/Downloads/Nexys_A7-100T1.xdc
-  link_design -top top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

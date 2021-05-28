@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/Ahiezer/Documents/GitHub/VHDL_Work/Class_Project/Class_Project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="dabd374fa1be42fdb4adfb073f273dff"/>
@@ -165,6 +165,7 @@
         </FileInfo>
       </File>
       <Config>
+        <Option Name="TargetConstrsFile" Val="$PPRDIR/../../../../Downloads/Nexys_A7-100T1.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
